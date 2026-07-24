@@ -55,6 +55,15 @@ class Tvctl < Formula
     virtualenv_install_with_resources
   end
 
+  def caveats
+    <<~EOS
+      tvctl requires Android Platform Tools (adb).
+
+      Install them with:
+        brew install --cask android-platform-tools
+    EOS
+  end
+
   test do
     assert_match "xiaomi-tv-cli 0.1.2", shell_output("#{bin}/tvctl version")
   end
