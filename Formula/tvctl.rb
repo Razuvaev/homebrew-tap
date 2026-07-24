@@ -7,7 +7,6 @@ class Tvctl < Formula
   sha256 "495e7e99bea61b17aaf1284280592eeb1cfbcf52ec85e2993e1697f6b531e7a5"
   license "MIT"
 
-  depends_on "android-platform-tools"
   depends_on "libyaml"
   depends_on "python@3.13"
 
