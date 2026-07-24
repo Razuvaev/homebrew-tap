@@ -3,8 +3,8 @@ class Tvctl < Formula
 
   desc "Discover, diagnose, and optimize Xiaomi Android TV devices over ADB"
   homepage "https://github.com/Razuvaev/xiaomi-tv-cli"
-  url "https://github.com/Razuvaev/xiaomi-tv-cli/archive/refs/tags/v0.1.1.tar.gz"
-  sha256 "c57b7b94ad9c040581d1bc05ae695f9f6316f01ab5810045861cfe551b6365aa"
+  url "https://github.com/Razuvaev/xiaomi-tv-cli/releases/download/v0.1.2/xiaomi_tv_cli-0.1.2.tar.gz"
+  sha256 "495e7e99bea61b17aaf1284280592eeb1cfbcf52ec85e2993e1697f6b531e7a5"
   license "MIT"
 
   depends_on "android-platform-tools"
@@ -15,6 +15,6 @@ class Tvctl < Formula
   end
 
   test do
-    assert_match "xiaomi-tv-cli 0.1.1", shell_output("#{bin}/tvctl version")
+    assert_match "xiaomi-tv-cli 0.1.2", shell_output("#{bin}/tvctl version")
   end
 end
